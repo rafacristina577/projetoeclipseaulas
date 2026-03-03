@@ -1,15 +1,15 @@
 package gestaobiblioteca.model;
 
 public /*abstract*/class Usuario  {
-    private int id;
-    private String nome;
-    
-    public void setIl(int id)
-       if (id < 0){
-        throw new IllegalArgumentException(s: "ID dever ser número positivo.");
-       } 
-       this.id =id;
-    
-       }
-        
+   private int id;  
+
+    public void setId(int id) {
+        if (id < 0) {
+            throw new IllegalArgumentException("ID deve ser um número positivo.");
+        }
+        this.id = id;
+    }
+    public int getId() {
+        return id;
+    }
 }
